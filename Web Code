@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div class = "flex-container" id = "all">
+  <div class = 'navbar-container section' id = 'navbar'>
+    <div class = "flex-item navbar" id = "navbar-home">Home</div>
+    <div class = "flex-item navbar" id = "navbar-about">About</div>
+    <div class = "flex-item navbar" id = "navbar-services">Services</div>
+    <div class = "flex-item navbar" id = "navbar-contact">Contact</div>
+  </div>
+  <div class = "title-container section" id = "title">Title goes here</div>
+  <div class = "banner-container section" id = 'banner'>Banner & motto goes here</div>
+  <div class = "about-container section" id = "about">Philosophy</div>
+  <div class = "services-container section" id = "services">Services</div>
+  <div class = "contact-container section" id = "contact">Contact information</div>  
+</div>
+
+<style>
+
+
+#all{
+  display: flex;
+  flex-direction: column;
+}
+
+.section{
+  height: 40vh;
+  width: 100vw;
+  border: solid black 1px;
+}
+
+#navbar{
+  height: 10vw;
+  display: flex;
+  background-color: tan;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar{
+  display: flex;
+  background-color: white;
+  align-items: center;
+  
+}
+
+
+
+#title{
+  background-color: teal;
+}
+
+#banner{
+  background-color: green;
+}
+
+#about{
+}
+
+#services{
+  background-color: yellow;
+  
+}
+
+#contact{
+  background-color: cyan;
+}
+</style>
+</body>
+
+</html>
