@@ -2,20 +2,42 @@
 <html>
 <body>
 <div class = "flex-container" id = "all">
+  
   <div class = 'navbar-container section' id = 'navbar'>
+    <div class = "flex-item navbar" id = "navbar-justin">Justin Hughes</div>
     <div class = "flex-item navbar" id = "navbar-home">Home</div>
     <div class = "flex-item navbar" id = "navbar-about">About</div>
     <div class = "flex-item navbar" id = "navbar-services">Services</div>
     <div class = "flex-item navbar" id = "navbar-contact">Contact</div>
+    <div class = "social-media" id = "social-media">
+      <div class = "btn" id ='facebook'>FB</div>
+      <div class = "btn" id = "instagram">In</div>      
+    </div>    
   </div>
-  <div class = "title-container section" id = "title">Title goes here</div>
-  <div class = "banner-container section" id = 'banner'>Banner & motto goes here</div>
-  <div class = "about-container section" id = "about">Philosophy</div>
+  
+  <div class = "title-container section" id = "title">
+    <div class = 'flex-item' id = "title-item">Massage Therapy</div>
+  </div>
+  
+  <div class = "banner-container section" id = 'banner'>
+    <div class = "flex-item" id = "banner-motto">Escape From Stress</div>
+  </div>
+  
+  <div class = "about-container section" id = "about">
+    <div class = "flex-item" id = 'justin-picture'>
+      <img src = "http://www.bainbridgeathleticclub.com/subdirectory/wp-content/uploads/2016/08/Justin-Hughes-1.jpg" alt = "Justin Hughes" style = "width: 24vw; height: 30vw;">
+    </div>
+    <div class = "flex-item" id = 'justin-philosophy'>Have a couple words to describe the philosophy. Then we'll do a small section or large section (depending on Justin) about him, his work, and his past?</div>
+  
+  </div>
   <div class = "services-container section" id = "services">Services</div>
   <div class = "contact-container section" id = "contact">Contact information</div>  
 </div>
 
+
 <style>
+
+
 
 
 #all{
@@ -23,39 +45,71 @@
   flex-direction: column;
 }
 
-.section{
-  height: 40vh;
-  width: 100vw;
-  border: solid black 1px;
-}
+
 
 #navbar{
-  height: 10vw;
+  height: 7vw;
+  flex-direction: row;
   display: flex;
   background-color: tan;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
 
 .navbar{
-  display: flex;
-  background-color: white;
-  align-items: center;
-  
+  margin: 1vw;
+  font-size: 3vw;
+  height: 2vw;
+  margin-right: auto;
 }
+
+#navbar-justin{
+  margin-right: auto;
+  margin-bottom: auto;
+  width: 4vw;
+  font-size: 1.5vw;
+}
+
+#social-media{
+  width: 5vw;
+}
+
+
 
 
 
 #title{
-  background-color: teal;
+  display: flex;
+  height: 60vw;
+  background-image: url("https://i1.wp.com/salusmt.com/wp-content/uploads/2014/08/salus-massage-still-life-78078207.jpg?fit=1366%2C671");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  color: white;
+}
+
+
+#title-item{
+  display: flex;
+  margin: 0 auto auto auto;
+  font-size: 12vw;
+  text-align: center;
 }
 
 #banner{
   background-color: green;
+  height: 40vw;
+  font-size: 15vw;
+  text-align: center;
 }
 
 #about{
+  display: flex;
 }
+#justin-philosophy{
+  font-size: 2vw;
+}
+
 
 #services{
   background-color: yellow;
