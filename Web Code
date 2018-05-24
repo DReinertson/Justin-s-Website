@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html>
 <body>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <div class = "flex-container" id = "all">
   
   <div class = 'navbar-container section' id = 'navbar'>
-    <div class = "flex-item navbar" id = "navbar-justin">Justin Hughes</div>
+    <div class = "flex-item navbar" id = "navbar-justin">Justin</br>Hughes</div>
     <div class = "flex-item navbar" id = "navbar-home">Home</div>
     <div class = "flex-item navbar" id = "navbar-about">About</div>
     <div class = "flex-item navbar" id = "navbar-services">Services</div>
     <div class = "flex-item navbar" id = "navbar-contact">Contact</div>
     <div class = "social-media" id = "social-media">
-      <div class = "btn" id ='facebook'>FB</div>
-      <div class = "btn" id = "instagram">In</div>      
+      <a href="https://www.facebook.com/" target = "_blank" class="fa fa-facebook btn" id = 'facebook'></a>
+      <a href = "http://www.bainbridgeathleticclub.com/spa-services/massage/" target="_blank" class = "btn" id = "BAC">BAC</a>      
     </div>    
   </div>
   
@@ -30,21 +32,27 @@
     <div class = "flex-item" id = 'justin-philosophy'>Have a couple words to describe the philosophy. Then we'll do a small section or large section (depending on Justin) about him, his work, and his past?</div>
   
   </div>
-  <div class = "services-container section" id = "services">Services</div>
+  
+  <div class = "services-container section" id = "services">
+    <div class = "services-item" id "service1">Title </br>
+    Section about service offered and a description of what it does and why its helpful</div>
+    <div class = "services-item service2" id "service2">Title </br>
+    Section about service offered and a description of what it does and why its helpful</div>
+<div class = "services-item service3" id "service3">Title </br>
+Section about service offered and a description of what it does and why its helpful</div>
+<div class = "services-item" id "service4">Title </br>
+Section about service offered and a description of what it does and why its helpful</div>
+    
+  </div>
+  
   <div class = "contact-container section" id = "contact">Contact information</div>  
 </div>
 
-
 <style>
-
-
-
-
 #all{
   display: flex;
   flex-direction: column;
 }
-
 
 
 #navbar{
@@ -55,46 +63,52 @@
   justify-content: space-evenly;
   align-items: center;
 }
-
 .navbar{
+  display: flex;
+  align-items: center;
   margin: 1vw;
   font-size: 3vw;
   height: 2vw;
   margin-right: auto;
 }
-
 #navbar-justin{
-  margin-right: auto;
-  margin-bottom: auto;
-  width: 4vw;
-  font-size: 1.5vw;
+  font-size: 2vw;
 }
-
 #social-media{
+  display: flex;
+  flex-wrap: wrap;
   width: 5vw;
 }
-
-
-
+#facebook{
+  height: 50%;
+  width: 100%;
+  background: #3B5998;
+  color: white;
+}
+#BAC{
+  width: 100%;
+  height: 50%;
+  background: #55ACEE;
+  color: white;
+}
 
 
 #title{
   display: flex;
-  height: 60vw;
+  height: 58vw;
   background-image: url("https://i1.wp.com/salusmt.com/wp-content/uploads/2014/08/salus-massage-still-life-78078207.jpg?fit=1366%2C671");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 100% 100%;
   color: white;
 }
-
-
 #title-item{
   display: flex;
   margin: 0 auto auto auto;
   font-size: 12vw;
   text-align: center;
 }
+
 
 #banner{
   background-color: green;
@@ -112,8 +126,27 @@
 
 
 #services{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   background-color: yellow;
+  height: 40vw;
+  justify-content: center;
+}
+.services-item{
+  width: 30vw;
+  height: 15vw;
+  margin: 1vw;
+  background-color: white;
+  margin: 1vw auto;
+  font-size: 2vw;
+}
+#service1{
   
+}
+.service2{
+}
+.service3{
 }
 
 #contact{
